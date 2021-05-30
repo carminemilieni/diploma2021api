@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beni",
+  "info": {
+    "name": "bene",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Titolo": {
+      "type": "string",
+      "required": true
+    },
+    "video_short": {
+      "type": "text"
+    },
+    "video_long": {
+      "type": "text",
+      "required": true
+    },
+    "desc": {
+      "type": "text",
+      "required": true
+    },
+    "gallery_short": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "gallery_long": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "lat": {
+      "type": "float",
+      "required": true
+    },
+    "lng": {
+      "type": "float",
+      "required": true
+    }
+  }
+}
