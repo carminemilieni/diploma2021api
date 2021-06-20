@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentos",
+  "info": {
+    "name": "Commento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "bene": {
+      "via": "commentos",
+      "model": "bene"
+    },
+    "user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "default": 0
+    }
+  }
+}

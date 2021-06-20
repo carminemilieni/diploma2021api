@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commentos",
+      "handler": "commento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commentos/count",
+      "handler": "commento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commentos/:id",
+      "handler": "commento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commentos",
+      "handler": "commento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commentos/:id",
+      "handler": "commento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commentos/:id",
+      "handler": "commento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

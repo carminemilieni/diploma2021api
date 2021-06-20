@@ -15,28 +15,11 @@
       "type": "string",
       "required": true
     },
-    "video_short": {
-      "type": "text"
-    },
-    "video_long": {
-      "type": "text",
-      "required": true
-    },
     "desc": {
       "type": "text",
       "required": true
     },
     "gallery_short": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "gallery_long": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -53,6 +36,10 @@
     "lng": {
       "type": "float",
       "required": true
+    },
+    "commentos": {
+      "via": "bene",
+      "collection": "commento"
     }
   }
 }
